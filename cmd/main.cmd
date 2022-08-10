@@ -1,7 +1,7 @@
 @echo off
 
-SET includes=
-SET links=
+SET includes=-Iinc -I%VULKAN_SDK%\Include
+SET links=-L%VULKAN_SDK%\Lib -lvulkan-1
 SET defines=
 
 echo "clean"
