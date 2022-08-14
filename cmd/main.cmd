@@ -2,7 +2,7 @@
 
 SET includes=-Iinc -Isrc -I%VULKAN_SDK%\Include
 SET links=-L%VULKAN_SDK%\Lib -lvulkan-1 -luser32
-SET defines=
+SET defines=-D DEBUG -D WINDOWS_BUILD
 
 echo "clean"
 del build\Main.exe
