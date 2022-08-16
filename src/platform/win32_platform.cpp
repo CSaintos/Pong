@@ -80,6 +80,10 @@ int main(int argc, char *argv[])
   while (running)
   {
     platform_update_window(window);
+    if (!vk_render(&vk_context))
+    {
+      return -1;
+    }
   }
 
   vk_destroy(&vk_context);
